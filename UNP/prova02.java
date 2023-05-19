@@ -27,5 +27,6 @@ public class prova02 {
         soma=soma+fin;
         System.out.print(fin);
         System.out.println("\nSoma: "+soma);
+        input.close();
     }
 }

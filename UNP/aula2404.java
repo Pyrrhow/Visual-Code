@@ -8,9 +8,9 @@ public class aula2404 {
         Scanner input = new Scanner(System.in);
         System.out.print("Digite um numero: ");
         int num1 = input.nextInt();
-       // System.out.print("Digite um numero: ");
-        //int num2 = input.nextInt();
-        //maiorEntreDoisInt(num1, num2);
+        System.out.print("Digite um numero: ");
+        int num2 = input.nextInt();
+        maiorEntreDoisInt(num1, num2);
 
         
         input.close();

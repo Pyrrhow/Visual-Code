@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Exemplo2_2303 {
     public static void main(String[] args) {
@@ -17,5 +16,6 @@ public class Exemplo2_2303 {
         }else{
             System.out.println("os numero sao iguais");
         }
+        ler.close();
     } 
 }
