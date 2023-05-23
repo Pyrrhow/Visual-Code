@@ -1,3 +1,4 @@
+package ProgOrientadaObjetos;
 public class sala {
 
     public static void main(String[] args) {

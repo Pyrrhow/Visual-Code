@@ -1,6 +1,7 @@
+package ProgOrientadaObjetos;
 import java.util.Scanner;
 
-public class aula2404 {
+public class aula0424 {
     
 
     public static void main(String[] args){

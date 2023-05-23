@@ -1,3 +1,4 @@
+package ProgOrientadaObjetos;
 public class java01_RodrigoNascimento {
    public static void main(String[] args) {
       int[][] matriz = new int[3][3];

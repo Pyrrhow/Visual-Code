@@ -1,3 +1,4 @@
+package ProgOrientadaObjetos;
 import java.util.Scanner;
 
 public class prova02 {

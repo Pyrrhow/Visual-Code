@@ -1,6 +1,7 @@
+package ProgOrientadaObjetos;
 import java.util.Scanner;
 
-public class Exemplo2_2303 {
+public class Exemplo0323 {
     public static void main(String[] args) {
 
         System.out.println("informe o primeiro numero: ");

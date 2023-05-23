@@ -1,8 +1,9 @@
+package ProgOrientadaObjetos;
 import java.util.Scanner;
 import java.lang.Math;
 
 
-public class aula1004 {
+public class aula0410 {
 
     public static void main(String[] args){
 
