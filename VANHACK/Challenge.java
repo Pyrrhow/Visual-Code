@@ -53,7 +53,7 @@ public class Challenge {
       
 
         // Build result string
-        for (int i = 0; i < result.length; i++) {
+        for (int i = 0; i < 5; i++) {
           if(resultMap.get(i) == null){
             sb.append('B');
           }else{
