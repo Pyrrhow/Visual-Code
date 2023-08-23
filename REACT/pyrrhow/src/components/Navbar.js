@@ -15,17 +15,15 @@ import { GiSkills } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <div className=" block w-full h-full bg-[#1e1f22] justify-center items-center py-4">
+    <div className=" block w-full h-full bg-[#1e1f22]  py-3">
       <div className="m-auto w-fit">
-        <LogoLink to="/">
-          <div className="h-6 w-9 p-1 m-1 ">
-            <MainLogo />
-          </div>
-        </LogoLink>
+        <SvgIcon to="/" icon={<MdDataset />} color="" />
       </div>
-      <Linha />
-      <div className="m-auto w-fit">
-        <div className="py-1">
+      <div className="mx-5">
+        <Linha />
+      </div>
+      <div className="mx-auto w-fit ">
+        <div className="">
           <CustomLink className="" to="/About">
             <div className=" p-2">
               <MdAccountCircle />
@@ -44,23 +42,27 @@ const Navbar = () => {
         </div>
       </div>
 
-      <Linha />
+      <div className="mx-5">
+        <Linha />
+      </div>
 
       <div className="m-auto w-fit">
         <ImgLink className="" to="/Resume"></ImgLink>
       </div>
-      <Linha />
+      <div className="mx-5">
+        <Linha />
+      </div>
       <div className="m-auto w-fit">
         <div>
           <a className="" to="/">
-            <div className="bg-[#313338] rounded-full h-12 w-12 text-[#23a559] text-3xl my-2 hover:text-white hover:rounded-lg hover:bg-[#23a559] transition  duration-300 ease-in-out">
+            <div className="bg-[#313338] rounded-full h-12 w-12 text-[#23a559] text-3xl my-2 hover:text-white hover:rounded-2xl hover:bg-[#23a559] transition  duration-300 ease-in-out">
               <div className=" p-2">
                 <MdLanguage />
               </div>
             </div>
           </a>
           <a className="" to="/">
-            <div className="bg-[#313338] rounded-full h-12 w-12 text-[#23a559] text-3xl my-2 hover:text-white hover:rounded-lg hover:bg-[#23a559] transition  duration-300 ease-in-out">
+            <div className="bg-[#313338] rounded-full h-12 w-12 text-[#23a559] text-3xl my-2 hover:text-white hover:rounded-2xl hover:bg-[#23a559] transition  duration-300 ease-in-out">
               <div className=" p-2">
                 <MdDarkMode />
               </div>
@@ -72,7 +74,7 @@ const Navbar = () => {
   );
 };
 
-function LogoLink({ to, children, ...props }) {
+function SvgIcon({ to, icon, color, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
@@ -81,10 +83,11 @@ function LogoLink({ to, children, ...props }) {
       <div
         className={
           isActive
-            ? "bg-[#5865f2] rounded-lg  h-12 w-12 py-2 px-0.5 fill-[#dbdee1]"
-            : "bg-[#313338] rounded-full  h-12 w-12 py-2 px-0.5 fill-[#dbdee1] hover:fill-white hover:bg-[#5865f2] hover:rounded-lg transition duration-300 ease-in-out"
+            ? "bg-[#5865f2] rounded-2xl  h-12 w-12 py-2 px-0.5 fill-[#dbdee1]"
+            : "bg-[#313338] rounded-full  h-12 w-12 py-2 px-0.5 fill-[#dbdee1] hover:fill-white hover:bg-[#5865f2] hover:rounded-2xl transition duration-300 ease-in-out"
         }
       >
+        {icon}
         {children}
       </div>
     </Link>
@@ -99,8 +102,8 @@ function CustomLink({ to, children, ...props }) {
     <div
       className={
         isActive
-          ? "bg-[#23a559] rounded-lg h-12 w-12 text-white text-3xl my-2 hover:text-white hover:rounded-lg hover:bg-[#23a559] transition  duration-300 ease-in-out"
-          : "bg-[#313338] rounded-full h-12 w-12 text-[#23a559] text-3xl my-2 hover:text-white hover:rounded-lg hover:bg-[#23a559] transition  duration-300 ease-in-out"
+          ? "bg-[#23a559] rounded-2xl h-12 w-12 text-white text-3xl my-2 hover:text-white hover:rounded-2xl hover:bg-[#23a559] transition  duration-300 ease-in-out"
+          : "bg-[#313338] rounded-full h-12 w-12 text-[#23a559] text-3xl my-2 hover:text-white hover:rounded-2xl hover:bg-[#23a559] transition  duration-300 ease-in-out"
       }
     >
       <Link to={to} {...props}>
@@ -118,8 +121,8 @@ function ImgLink({ to, children, ...props }) {
     <div
       className={
         isActive
-          ? "bg-[#faa61b] rounded-lg h-12 w-12  text-3xl my-2 "
-          : "group bg-[#313338] rounded-full h-12 w-12  text-3xl my-2  hover:rounded-lg hover:bg-[#faa61b] transition  duration-300 ease-in-out"
+          ? "bg-[#faa61b] rounded-2xl h-12 w-12  text-3xl my-2 "
+          : "group bg-[#313338] rounded-full h-12 w-12  text-3xl my-2  hover:rounded-2xl hover:bg-[#faa61b] transition  duration-300 ease-in-out"
       }
     >
       <Link to={to} {...props}>

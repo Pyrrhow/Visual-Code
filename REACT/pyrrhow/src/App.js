@@ -9,8 +9,8 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="flex h-[100vh] w-[100vw]">
-      <div className="w-[75px] h-full">
-        <div className="w-[75px] h-full fixed">
+      <div className="w-[72px] h-full">
+        <div className="w-[72px] h-full fixed">
           <Navbar />
         </div>
       </div>
